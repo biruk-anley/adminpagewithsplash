@@ -30,15 +30,13 @@ class AdminPage extends StatelessWidget {
   Widget build(BuildContext context) {
     SafeArea:
     return SafeArea(
-      minimum: const EdgeInsets.only(top: 15),
+      
       child: Drawer(
           child: ListView(children: <Widget>[
         Expanded(
           flex: 2,
           child: Container(
-            margin: EdgeInsets.only(bottom: 10),
-            
-            height: 140,
+            height: 160,
             decoration: BoxDecoration(
               color: Colors.amber,
               shape: BoxShape.circle,
@@ -49,6 +47,7 @@ class AdminPage extends StatelessWidget {
             ),
           ),
         ),
+        SizedBox(height: 25,),
         
         Expanded(child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
